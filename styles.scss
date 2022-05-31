@@ -456,7 +456,7 @@ a {
 .team-card {
   width: 965px;
   position: relative;
-  margin: 220px 169px 72px 537px;
+  margin: 22px auto;
   &__text {
     border: 1px solid var(--secondary-color);
     height: 420px;
@@ -590,5 +590,74 @@ a {
   margin-top: 82px;
   &__title {
     text-align: center;
+  }
+
+  &__card {
+    width: 1021px;
+    display: flex;
+    margin: 22px auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__card-photo {
+    height: 331px;
+    width: 481px;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__card-text {
+    width: 640px;
+    height: 408px;
+    background-color: #151313;
+    padding: 109px 87px 107px 145px;
+  }
+
+  &__card-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 19px;
+  }
+
+  &__card-description {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 23px;
+    opacity: 0.72;
+    margin-bottom: 35px;
+  }
+
+  &__card-date {
+    font-size: 12px;
+    margin-right: 26px;
+    @include secondary-text;
+  }
+
+  &__card-bottom {
+    display: flex;
+    align-items: center;
+  }
+
+  &__card-social {
+    display: flex;
+  }
+
+  &__card-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #a07b5027;
+    margin-right: 17px;
+
+    & svg {
+      fill: var(--secondary-color);
+    }
   }
 }
